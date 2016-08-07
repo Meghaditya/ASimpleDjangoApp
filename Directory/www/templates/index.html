@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A SimpleDjangoApp</title>
+  </head>
+  <body>
+    <h1>The app</h1>
+    {% for person in people %}
+      <p>{{person.name}} - {{person.title}} - {{person.email}}</p>
+      <img src={{person.image}} width="200"/>
+    {% endfor %}
+  </body>
+</html>
